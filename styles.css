@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto'; /* Font used by YouTube */
+}
+
+.container {
+    width: 85%; /* Sets the maximum width of the container */
+    margin: 10px auto; /* Centers the container */
+}
+
+h1 {
+    font-size: 2em; /* Main heading font size */
+    color: #333; /* Darker gray for better visibility */
+    margin-bottom: 10px; /* Spacing below the heading */
+}
+
+.main-header {
+    margin-left: 8.5%; /* Aligns the main header with the container's content */
+}
+
+.description {
+    color: #777; 
+    margin-left: 8.5%; /* Matches alignment with header */
+    margin-top: -1%; /* Adjusts spacing above the description */
+}
+
+.card {
+    border-radius: 8px; 
+    overflow: hidden; /* Ensures content stays within the card boundaries */
+    text-align: left; /* Aligns text to the left */
+    width: 20%; /* Sets the width of each card */
+    margin: .5%; /* Small spacing between cards */
+    position: relative; /* Allows for positioning child elements */
+}
+
+.cards {
+    display: flex; /* Makes the child elements (cards) align in a row */
+    justify-content: center; /* Centers the cards */
+    flex-wrap: wrap; /* Wraps cards to a new row if necessary */
+}
+
+.card img {
+    width: 100%; /* Makes the image span the full width of the card */
+    border-radius: 8px; /* Matches the card's rounded corners */
+}
+
+.card h3 {
+    font-size: 1em; 
+    margin: 1px 40px 10px 1px; /* Adjusts spacing around the title */
+    color: #333; 
+    display: -webkit-box; /* Allows for multi-line ellipsis */
+    -webkit-box-orient: vertical; /* Sets vertical text layout */
+    overflow: hidden; /* Hides overflowing text */
+    text-overflow: ellipsis; /* Adds '...' for overflow */
+    -webkit-line-clamp: 2; /* Limits the title to 2 lines */
+}
+
+.channel {
+    font-size: 0.8em; 
+    margin: -5px 10px 10px 1px; /* Adjusts spacing for a compact layout */
+    color: #777; /* Lighter gray for less emphasis */
+}
+
+.views {
+    font-size: 0.8em; 
+    margin: -10px 5px 10px 1px; /* Adjusts spacing to align neatly */
+    color: #777; 
+}
+
+.image-container {
+    position: relative; /* Allows for positioning child elements within the image container */
+}
+
+.duration {
+    position: absolute; /* Positions the duration label over the image */
+    bottom: 8px; /* Places it near the bottom edge */
+    right: 5px; /* Aligns it to the right edge */
+    background-color: rgba(0, 0, 0, 0.798); /* Semi-transparent black background */
+    color: #fff; 
+    padding: 2px; /* Small padding around the text */
+    font-size: 0.7em; /* Makes the duration text smaller */
+    border-radius: 3px; /* Rounds the corners of the duration label */
+}
+
+.kebab-menu {
+    position: absolute; /* Positions the kebab menu relative to the card */
+    top: 60%; /* Aligns with the title text */
+    right: 1px; /* Near the right edge of the card */
+    font-size: 1.5em; /* Makes it slightly larger for visibility */
+}
